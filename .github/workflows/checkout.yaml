@@ -1,0 +1,14 @@
+name: Checkout
+
+on:
+  push:
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+
+      - name: Listar arquivos
+        run: ls -la
